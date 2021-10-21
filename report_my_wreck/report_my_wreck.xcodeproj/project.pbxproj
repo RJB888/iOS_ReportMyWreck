@@ -13,6 +13,10 @@
 		19E11E7C272220BE00D76E58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E11E7B272220BE00D76E58 /* Preview Assets.xcassets */; };
 		19E11E7E272220BE00D76E58 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E11E7D272220BE00D76E58 /* Persistence.swift */; };
 		19E11E81272220BE00D76E58 /* report_my_wreck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19E11E7F272220BE00D76E58 /* report_my_wreck.xcdatamodeld */; };
+		19E11E8827222E1000D76E58 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E11E8727222E1000D76E58 /* MapView.swift */; };
+		19E11E8A27222E6800D76E58 /* EnterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E11E8927222E6800D76E58 /* EnterDetailsView.swift */; };
+		19E11E8C27222EAC00D76E58 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E11E8B27222EAC00D76E58 /* LoginView.swift */; };
+		19E11E8E27222EEE00D76E58 /* UserPrifileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E11E8D27222EEE00D76E58 /* UserPrifileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		19E11E7B272220BE00D76E58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19E11E7D272220BE00D76E58 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		19E11E80272220BE00D76E58 /* report_my_wreck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = report_my_wreck.xcdatamodel; sourceTree = "<group>"; };
+		19E11E8727222E1000D76E58 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		19E11E8927222E6800D76E58 /* EnterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterDetailsView.swift; sourceTree = "<group>"; };
+		19E11E8B27222EAC00D76E58 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		19E11E8D27222EEE00D76E58 /* UserPrifileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrifileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +65,12 @@
 			children = (
 				19E11E74272220BB00D76E58 /* report_my_wreckApp.swift */,
 				19E11E76272220BB00D76E58 /* ContentView.swift */,
-				19E11E78272220BE00D76E58 /* Assets.xcassets */,
+				19E11E8927222E6800D76E58 /* EnterDetailsView.swift */,
+				19E11E8B27222EAC00D76E58 /* LoginView.swift */,
+				19E11E8727222E1000D76E58 /* MapView.swift */,
 				19E11E7D272220BE00D76E58 /* Persistence.swift */,
+				19E11E8D27222EEE00D76E58 /* UserPrifileView.swift */,
+				19E11E78272220BE00D76E58 /* Assets.xcassets */,
 				19E11E7F272220BE00D76E58 /* report_my_wreck.xcdatamodeld */,
 				19E11E7A272220BE00D76E58 /* Preview Content */,
 			);
@@ -144,7 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E11E81272220BE00D76E58 /* report_my_wreck.xcdatamodeld in Sources */,
+				19E11E8C27222EAC00D76E58 /* LoginView.swift in Sources */,
 				19E11E7E272220BE00D76E58 /* Persistence.swift in Sources */,
+				19E11E8A27222E6800D76E58 /* EnterDetailsView.swift in Sources */,
+				19E11E8827222E1000D76E58 /* MapView.swift in Sources */,
+				19E11E8E27222EEE00D76E58 /* UserPrifileView.swift in Sources */,
 				19E11E77272220BB00D76E58 /* ContentView.swift in Sources */,
 				19E11E75272220BB00D76E58 /* report_my_wreckApp.swift in Sources */,
 			);
