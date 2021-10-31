@@ -9,12 +9,19 @@ import SwiftUI
 
 struct MapView: View {
     var body: some View {
-        Text("Maps Incoming")
+        Text("maps incoming")
+        NavigationView {
+            NavigationLink(destination: EnterDetailsView()) {
+                Text("Next Page")
+            }
+        }
     }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        Group {
+            MapView()
+        }
     }
 }

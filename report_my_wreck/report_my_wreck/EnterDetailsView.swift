@@ -10,6 +10,11 @@ import SwiftUI
 struct EnterDetailsView: View {
     var body: some View {
         Text("Enter details for email")
+        NavigationView {
+            NavigationLink(destination: ContentView()) {
+                Text("Send Email")
+            }
+        }
     }
 }
 
