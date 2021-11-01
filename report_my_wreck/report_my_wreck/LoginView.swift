@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var userName: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text("Username \nPassword")
+        Form {
+            Section(header: Text("Username")){
+                TextField("USERNAME", text: $userName)
+            }
+            Section(header: Text("Password")){
+                SecureField("PASSWORD", text: $password)
+            }
+            Button(action:{}){
+                Text("SUBMIT")
+            }
+        }
     }
 }
 
