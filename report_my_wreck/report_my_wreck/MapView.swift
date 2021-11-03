@@ -10,10 +10,8 @@ import SwiftUI
 struct MapView: View {
     var body: some View {
         Text("maps incoming")
-        NavigationView {
-            NavigationLink(destination: EnterDetailsView()) {
-                Text("Next Page")
-            }
+        NavigationLink(destination: EnterDetailsView()) {
+            Text("Next Page")
         }
     }
 }
