@@ -9,11 +9,17 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @State var isActive : Bool = false
+    
+    
     var body: some View {
         NavigationView {
-            NavigationLink(destination: MapView()) {
+            NavigationLink(destination: MapView(rootIsActive: self.$isActive),
+                           isActive: self.$isActive
+            ) {
                 Text("Get Started")
             }
+            .isDetailLink(false)
         }
     }
 }
