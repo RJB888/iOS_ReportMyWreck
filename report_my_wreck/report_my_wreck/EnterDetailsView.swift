@@ -9,15 +9,10 @@ import SwiftUI
 
 struct EnterDetailsView: View {
     @State private var emailText: String = ""
+    @Binding var shouldPopToRootView : Bool
+    
     var body: some View {
-
-        Text("Enter details for email")
-        NavigationView {
-            NavigationLink(destination: ContentView()) {
-                Text("Send Email")
-            }
-        }
-
+        
         Form {
             Section(header: Text("Compose email")){
                 TextEditor(text: $emailText)
@@ -27,14 +22,16 @@ struct EnterDetailsView: View {
                     Text("Select Photo")
                 }
             }
-            
+            Button (action: { self.shouldPopToRootView = false } ){
+                Text("Return to main page")
+            }
         }
-       
+        
     }
 }
 
 struct EnterDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        EnterDetailsView()
+        EnterDetailsView(shouldPopToRootView: .constant(false))
     }
 }
