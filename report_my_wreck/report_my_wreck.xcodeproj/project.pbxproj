@@ -209,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F02D9062749A0220018E109 /* MapView.swift in Sources */,
 				1999B8F02745ABE6007CB60C /* KeychainServices.swift in Sources */,
 				3F02D9062749A0220018E109 /* MapView.swift in Sources */,
 				19E11E81272220BE00D76E58 /* report_my_wreck.xcdatamodeld in Sources */,
