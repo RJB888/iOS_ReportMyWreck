@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            NavigationLink(destination: MapHome(rootIsActive: self.$isActive),
+            NavigationLink(destination: LoginView(rootIsActive: self.$isActive),
                            isActive: self.$isActive
             ) {
                 Text("Get Started")
