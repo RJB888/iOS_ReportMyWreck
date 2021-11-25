@@ -16,7 +16,7 @@ struct LoginView: View {
     
     var body: some View {
         if getStoredPassword() == "" {
-            NavigationLink(destination: MapView(rootIsActive: $rootIsActive), isActive: $validated){}.hidden()
+            NavigationLink(destination: MapHome(rootIsActive: $rootIsActive), isActive: $validated){}.hidden()
             Form {
                 Section(header: Text("Set Password")){
                     SecureField("PASSWORD", text: $password)
@@ -30,7 +30,7 @@ struct LoginView: View {
                 }
         }
         else {
-            NavigationLink(destination: MapView(rootIsActive: $rootIsActive), isActive: $validated){
+            NavigationLink(destination: MapHome(rootIsActive: $rootIsActive), isActive: $validated){
             }.hidden()
             Form {
                 Section(header: Text("Enter Your Password")){
