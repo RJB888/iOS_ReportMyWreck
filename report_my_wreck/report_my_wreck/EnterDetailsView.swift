@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import UIKit
+import MessageUI
 
 struct EnterDetailsView: View {
     @State private var emailText: String = ""
