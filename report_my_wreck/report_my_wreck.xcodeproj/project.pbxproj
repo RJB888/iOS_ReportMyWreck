@@ -21,6 +21,7 @@
 		3F02D90427499E660018E109 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02D90327499E660018E109 /* Coordinator.swift */; };
 		3F02D9062749A0220018E109 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02D9052749A0220018E109 /* MapView.swift */; };
 		3F02D9092749A5910018E109 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02D9082749A5910018E109 /* LocationManager.swift */; };
+		3FFEED2C27570D2500414641 /* Alatsi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEED2B27570D2500414641 /* Alatsi-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		3F02D9052749A0220018E109 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3F02D9082749A5910018E109 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		3F02D90A2749A8B20018E109 /* report-my-wreck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "report-my-wreck-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3FFEED2B27570D2500414641 /* Alatsi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alatsi-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		19E11E73272220BB00D76E58 /* report_my_wreck */ = {
 			isa = PBXGroup;
 			children = (
+				3FFEED2727570A7300414641 /* Resources */,
 				3F02D90A2749A8B20018E109 /* report-my-wreck-Info.plist */,
 				3F02D90027499BAF0018E109 /* Map */,
 				19E11E74272220BB00D76E58 /* report_my_wreckApp.swift */,
@@ -89,8 +92,8 @@
 				19E11E8B27222EAC00D76E58 /* LoginView.swift */,
 				19E11E7D272220BE00D76E58 /* Persistence.swift */,
 				19E11E8D27222EEE00D76E58 /* UserPrifileView.swift */,
-				1999B8EE2745AB97007CB60C /* Models */,
 				19E11E78272220BE00D76E58 /* Assets.xcassets */,
+				1999B8EE2745AB97007CB60C /* Models */,
 				19E11E7F272220BE00D76E58 /* report_my_wreck.xcdatamodeld */,
 				19E11E7A272220BE00D76E58 /* Preview Content */,
 			);
@@ -137,6 +140,22 @@
 				3F02D9082749A5910018E109 /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		3FFEED2727570A7300414641 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FFEED2827570A8F00414641 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FFEED2827570A8F00414641 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3FFEED2B27570D2500414641 /* Alatsi-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +218,7 @@
 			files = (
 				19E11E7C272220BE00D76E58 /* Preview Assets.xcassets in Resources */,
 				19E11E79272220BE00D76E58 /* Assets.xcassets in Resources */,
+				3FFEED2C27570D2500414641 /* Alatsi-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
