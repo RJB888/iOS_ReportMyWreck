@@ -26,7 +26,7 @@ struct ContentView: View {
                     .padding(-60)
             
             VStack{
-                Image("main")
+                Image("Main")
                     .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 250, height: 250, alignment: .center)
