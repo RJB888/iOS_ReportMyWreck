@@ -17,6 +17,7 @@ struct MapHome: View {
     
     var body: some View {
         VStack{
+            
             //MAp...
             
         MapView()
@@ -26,13 +27,15 @@ struct MapHome: View {
             
         NavigationLink(destination: EnterDetailsView(shouldPopToRootView: self.$rootIsActive)) {
             Text("Next Page")
-                .bold()
-                .frame(width: 250,
-                       height: 50,
-                       alignment: .center)
-                .background(Color.blue)
+                .font(.custom("Alatsi-Regular", size: 30))
+                .fontWeight(.semibold)
                 .foregroundColor(.white)
-                .cornerRadius(10)
+                .frame(width: 230,
+                       height: 40,
+                       alignment: .center)
+                .padding(5)
+                .background(Color("button_color"))
+                .cornerRadius(50)
         }
         .isDetailLink(false)
         }
