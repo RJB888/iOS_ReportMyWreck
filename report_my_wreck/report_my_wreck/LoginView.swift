@@ -15,23 +15,51 @@ struct LoginView: View {
     @State private var badPassword: Bool = false
     
     var body: some View {
+        
+        ZStack{
+            Color("bg_color")
+                .ignoresSafeArea(.all, edges: .all)
+            VStack{
+            Text("Please Login")
+                .font(.custom("Alatsi-Regular", size: 50))
+                .fontWeight(.bold)
+                .italic()
+                .foregroundColor(Color("title_color"))
+                .padding(-100)
+            VStack{
+                    Image("Main")
+                        .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 250, height: 250, alignment: .center)
+                            .padding(.bottom, 60)
+            
         if getStoredPassword() == "" {
+            
             NavigationLink(destination: MapHome(rootIsActive: $rootIsActive), isActive: $validated){}.hidden()
+            
             Form {
-                Section(header: Text("Set Password")){
+                Section(){
                     SecureField("PASSWORD", text: $password)
-                }
-                
+                }.padding()
                 Text("SET PASSWORD")
                     .onTapGesture {
                         updatePassword(password: password)
                         validated = validatePassword(password: password)
-                    }
-                }
+                            
+                        
+                    }.padding()
+                
+            
+                
+            }
+                .frame(width: 340, height: 230, alignment: .center)
+                .cornerRadius(40)
+        
         }
         else {
             NavigationLink(destination: MapHome(rootIsActive: $rootIsActive), isActive: $validated){
             }.hidden()
+            
             Form {
                 Section(header: Text("Enter Your Password")){
                     SecureField("PASSWORD", text: $password)
@@ -49,6 +77,7 @@ struct LoginView: View {
                                 print("Error occurred while setting password")
                             }
                         }
+                    
                         validated = validatePassword(password: password)
                         if !validated {
                             badPassword = true
@@ -59,10 +88,16 @@ struct LoginView: View {
                     title: Text("PASSWORD ERROR"),
                     message: Text("Incorrect password was entered. Enter '...' to reset."),
                     dismissButton: .default(Text("Ok")))
+                            }.frame(width: 340, height: 230, alignment: .center)
+                .cornerRadius(40)
+                        }
+                    }
+                }
             }
         }
     }
-    
+
+
     func validatePassword(password: String) -> Bool{
         return getStoredPassword() == password
     }
@@ -86,7 +121,7 @@ struct LoginView: View {
             print("Error occurred while setting password")
         }
     }
-}
+
 
 
 struct LoginView_Previews: PreviewProvider {
